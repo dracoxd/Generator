@@ -166,7 +166,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send ("This Guy Is The Founder ! Clusive#2851", {files: ["https://cdn.discordapp.com/attachments/554413918231986244/554444981985607709/a.png"]});
     }
 
-    if (msg.startsWith ("+pgen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
+    if (msg.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 40;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
@@ -276,7 +276,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
     }
 
-    if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("MANAGE_EMOJIS")) {
+    if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
@@ -311,7 +311,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
     }
 
-    if (msg.startsWith (prefix + "pgen spotify") && message.member.hasPermission ("MANAGE_EMOJIS")) {
+    if (msg.startsWith (prefix + "pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 20;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
@@ -346,7 +346,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
     }
 
-    if (msg.startsWith (prefix + "gen origin") && message.member.hasPermission ("MANAGE_EMOJIS")) {
+    if (msg.startsWith (prefix + "gen origin") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 20;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
@@ -381,7 +381,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
     }
 
-    if (msg.startsWith (prefix + "pgen origin") && message.member.hasPermission ("MANAGE_EMOJIS")) {
+    if (msg.startsWith (prefix + "pgen origin") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 20;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
