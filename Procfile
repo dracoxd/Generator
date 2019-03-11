@@ -1,1 +1,1 @@
-worker: node Generator.js
+worker: node generator.js
