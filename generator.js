@@ -90,7 +90,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send (embed);    
     }
 
-    if (msg.startsWith (prefix + "Gen")) {
+    if (msg.startsWith (prefix + "gen")) {
         embed2 = new discord.RichEmbed ()
             .setAuthor ("Commands To Know")
             .setDescription ("+gen Fortnite \n +pgen Fortnite \n +gen Spotify \n +pgen Spotify \n +gen Origin \n +pgen Origin")
