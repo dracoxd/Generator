@@ -5,7 +5,7 @@ const discord = require ('discord.js');
  client.on ("ready", () => {
      console.log ("ready!");
 
-     client.user.setActivity ("Watching 1 Server | +gen");
+     client.user.setActivity ("Watching 1 Server | +Help");
      
      
 
@@ -90,7 +90,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send (embed);    
     }
 
-    if (msg.startsWith (prefix + "gen")) {
+    if (msg.startsWith (prefix + "help")) {
         embed2 = new discord.RichEmbed ()
             .setAuthor ("Commands To Know")
             .setDescription ("+gen Fortnite \n +pgen Fortnite \n +gen Spotify \n +pgen Spotify \n +gen Origin \n +pgen Origin")
