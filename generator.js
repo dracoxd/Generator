@@ -5,7 +5,7 @@ const discord = require ('discord.js');
  client.on ("ready", () => {
      console.log ("ready!");
 
-     client.user.setActivity ("Watching 1 Server | +Gen");
+     client.user.setActivity ("Watching 1 Server | +gen");
      
      
 
