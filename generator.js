@@ -82,7 +82,7 @@ client.on('guildMemberRemove' , member => {
         setTimeout(() => cooldowns.delete(user), time * 1000);
         console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
        message.channel.send("You Have To Wait 5 Minutes To Use This Command Again");
-
+  }
 
     if (msg.startsWith (prefix + "hello")) {
         message.reply ("Hi!");
