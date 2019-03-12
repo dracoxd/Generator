@@ -425,7 +425,7 @@ client.on('guildMemberRemove' , member => {
        client.on('message', (message) => {
         if (message.author.bot || cooldowns.has(message.author)) return;
         if (message.content === '+fortnite gen') {
-          mention.send(random2);
+          mention.send();
          message.channel.send(embed);
           cooldown(message.author, 300);
         }
