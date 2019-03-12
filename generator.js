@@ -108,7 +108,7 @@ client.on('guildMemberRemove' , member => {
             .setColor ("00ff00")
 
         message.channel.send (embed2);
-    }
+    } 
 
     if (msg.startsWith (prefix + "creator")) {
         embed = new discord.RichEmbed ()
@@ -425,7 +425,7 @@ client.on('guildMemberRemove' , member => {
        client.on('message', (message) => {
         if (message.author.bot || cooldowns.has(message.author)) return;
         if (message.content === '+fortnite gen') {
-         mention.send (random2);
+         mention.send(random2);
          message.channel.send(embed);
           cooldown(message.author, 300);
         }
