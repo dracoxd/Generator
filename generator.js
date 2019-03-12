@@ -2,7 +2,7 @@ const discord = require ('discord.js');
 
  var client = new discord.Client();
 
-
+const cooldowns = new Set();
 
  client.on ("ready", () => {
      console.log ("ready!");
@@ -76,6 +76,12 @@ client.on('guildMemberRemove' , member => {
         }
         answered = false;
     }
+  
+  function cooldown(user, time) {
+        cooldowns.add(user);
+        setTimeout(() => cooldowns.delete(user), time * 1000);
+        console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
+       message.channel.send("You Have To Wait 5 Minutes To Use This Command Again");
 
 
     if (msg.startsWith (prefix + "hello")) {
@@ -415,6 +421,14 @@ client.on('guildMemberRemove' , member => {
         .setColor("00FF00") 
         message.channel.send(embed);
     }
+   
+       client.on('message', (message) => {
+        if (message.author.bot || cooldowns.has(message.author)) return;
+        if (message.content === '!Idk') {
+          message.channel.send('Idk!');
+          cooldown(message.author, 300);
+        }
+      });
 
     if (msg.startsWith ("!write")) {
         editedmessage = message.content.slice (6);
