@@ -218,6 +218,8 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
     }
 
+  client.on('message', msg => {
+    if (msg.channel.id === '551484524941410334') { 
     if (msg.startsWith (prefix + "gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 40;
         var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -272,6 +274,8 @@ client.on('guildMemberRemove' , member => {
         .setColor("00FF00")
         message.channel.send(embed);
     }
+    }
+  });
 
     if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
