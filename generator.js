@@ -229,8 +229,8 @@ client.on('guildMemberRemove' , member => {
 
     if (msg.startsWith (prefix + "gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 40;
-        var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random2) {
+        var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        switch (random3) {
             case 1: mention.send ("malfy5@gmail.com:pokemonball24"); break;
             case 2: mention.send ("maki.makay@gmail.com:Volcano5"); break;
             case 3: mention.send ("artem_kolomnikov@mail.ru:azx21618"); break;
@@ -284,8 +284,8 @@ client.on('guildMemberRemove' , member => {
 
     if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
-        var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random2) {
+        var random4 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        switch (random4) {
             case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
             case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
             case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
@@ -319,8 +319,8 @@ client.on('guildMemberRemove' , member => {
 
     if (msg.startsWith (prefix + "pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 20;
-        var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random2) {
+        var random5 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        switch (random5) {
             case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
             case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
             case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
@@ -354,8 +354,8 @@ client.on('guildMemberRemove' , member => {
 
     if (msg.startsWith (prefix + "gen origin") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 20;
-        var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random2) {
+        var random6 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        switch (random6) {
             case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
             case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
             case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
@@ -389,8 +389,8 @@ client.on('guildMemberRemove' , member => {
 
     if (msg.startsWith (prefix + "pgen origin") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 20;
-        var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random2) {
+        var random7 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        switch (random7) {
             case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
             case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
             case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
@@ -425,7 +425,7 @@ client.on('guildMemberRemove' , member => {
        client.on('message', (message) => {
         if (message.author.bot || cooldowns.has(message.author)) return;
         if (message.content === '+fortnite gen') {
-          mention.send (random2);
+         mention.send (random2);
          message.channel.send(embed);
           cooldown(message.author, 300);
         }
