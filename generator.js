@@ -4,7 +4,7 @@ const discord = require ('discord.js');
 
 const cooldowns = new Set();
 
-const stupidclusive = new Set();
+const coolguy = new Set();
 
  client.on ("ready", () => {
      console.log ("ready!");
@@ -18,7 +18,7 @@ const stupidclusive = new Set();
      userAnswer = "";
      });
 
- const fs = require("fs");
+ const fs = require("fs"); 
  client.msgs = require ("./msgs.json");
 
  client.on ("guildMemberAdd", member => {
@@ -79,19 +79,20 @@ client.on('guildMemberRemove' , member => {
         answered = false;
     }
   
-  function cooldown(user, time) {
+ function cooldown(user, time) {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :joy:`)
        .setColor ("00ff00")
        message.channel.send (embed);
       }  
-  function clusive(user, time) {
-        stupidclusive.add(user);
-        setTimeout(() => stupidclusive.delete(user), time * 1000);
+
+      function skanherooo(user, time) {
+        coolguy.add(user);
+        setTimeout(() => coolguy.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :joy:`)
        .setColor ("00ff00")
        message.channel.send (embed);
       }      
@@ -238,7 +239,7 @@ client.on('guildMemberRemove' , member => {
       })
     
            client.on('message', (message) => {
-        if (message.author.bot || stupidclusive.has(message.author)) return;
+        if (message.author.bot || coolguy.has(message.author)) return;
         if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -293,7 +294,7 @@ client.on('guildMemberRemove' , member => {
             .setDescription("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor("00FF00")
             message.channel.send(embed);
-            clusive(message.author, 180);
+            skanherooo(message.author, 180);
             }
           })
   
