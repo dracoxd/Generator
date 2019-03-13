@@ -175,8 +175,6 @@ client.on('guildMemberRemove' , member => {
         message.channel.send ("This Guy Is The Founder ! Clusive#2851", {files: ["https://cdn.discordapp.com/attachments/554413918231986244/554444981985607709/a.png"]});
     }
 
-    client.on('message', (message) => {
-        if (message.author.bot || cooldowns.has(message.author)) return;
         if (message.content === '+gen fortnite') && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 40;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -230,12 +228,8 @@ client.on('guildMemberRemove' , member => {
         .setDescription("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
         .setColor("00FF00")
         message.channel.send(embed);
-       cooldown(message.author, 180);
     }
-     });
 
-   client.on('message', (message) => {
-        if (message.author.bot || cooldowns.has(message.author)) return;
         if (message.content === '+gen fortnite') && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -289,9 +283,8 @@ client.on('guildMemberRemove' , member => {
             .setDescription("I have successfully sent u the fortnite account ! Please cheack your DMs:thumbup:")
             .setColor("00FF00")
             message.channel.send(embed);
-          cooldown(message.author, 300);
-        }
-      }); 
+          
+        } 
   
     if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
