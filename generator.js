@@ -92,10 +92,7 @@ client.on('guildMemberRemove' , member => {
       function skanherooo(user, time) {
         coolguy.add(user);
         setTimeout(() => coolguy.delete(user), time * 1000);
-       embed = new discord.RichEmbed ()
-       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`)
-       .setColor ("00ff00")
-       message.channel.send (embed);
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`
       }      
   
     if (msg.startsWith (prefix + "hello")) {
@@ -294,7 +291,7 @@ client.on('guildMemberRemove' , member => {
             mentionMessage = message.content.slice (8)
             mention.send ();
             embed = new discord.RichEmbed()
-            .setDescription("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
+            .setDescription("I Have Successfully Sent You The Premium Fortnite Account, Check DM's :thumbup: [Wait 5 Minutes Before Using This Command Again]")
             .setColor("00FF00")
             message.channel.send(embed); 
             skanherooo(message.author, 180);
