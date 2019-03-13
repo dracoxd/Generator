@@ -78,8 +78,8 @@ client.on('guildMemberRemove' , member => {
         }
         answered = false;
     }
-  
- function cooldown(user, time) {
+        if (message.channel.id !== '551484524941410334') return
+        function cooldown(user, time) {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
@@ -87,7 +87,8 @@ client.on('guildMemberRemove' , member => {
        .setColor ("00ff00")
        message.channel.send (embed);
       }  
-
+      
+  if (message.channel.id !== '551484526262747144') return
       function skanherooo(user, time) {
         coolguy.add(user);
         setTimeout(() => coolguy.delete(user), time * 1000);
