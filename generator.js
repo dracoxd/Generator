@@ -213,7 +213,7 @@ client.on('guildMemberRemove' , member => {
             case 32: mention.send ("crapaezgi6@gmail.com:ccaappgg666"); break;
             case 33: mention.send ("Antonioalborea@gmail.com:scandone94"); break;
             case 34: mention.send ("netromrex@gmail.com:uvb6xahy"); break;
-            }
+}
         if (mention == null) return; 
         message.delete();
         mentionMessage = message.content.slice (8)
@@ -269,7 +269,7 @@ client.on('guildMemberRemove' , member => {
                 case 38: mention.send ("jasigala13@gmail.com:131351Ja"); break;  
                 case 39: mention.send ("baxterbarni@gmail.com:Sulim1967"); break;  
                 case 40: mention.send ("cleberlm@gmail.com:zeber1681"); break;  
-                }
+}
             if (mention == null) return; 
             message.delete();
             mentionMessage = message.content.slice (8)
