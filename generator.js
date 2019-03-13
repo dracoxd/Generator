@@ -175,7 +175,9 @@ client.on('guildMemberRemove' , member => {
         message.channel.send ("This Guy Is The Founder ! Clusive#2851", {files: ["https://cdn.discordapp.com/attachments/554413918231986244/554444981985607709/a.png"]});
     }
 
-        if (message.content === '+gen fortnite') && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+         client.on('message', (message) => {
+        if (message.author.bot || cooldowns.has(message.author)) return;
+        if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 34;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
@@ -213,7 +215,7 @@ client.on('guildMemberRemove' , member => {
             case 32: mention.send ("crapaezgi6@gmail.com:ccaappgg666"); break;
             case 33: mention.send ("Antonioalborea@gmail.com:scandone94"); break;
             case 34: mention.send ("netromrex@gmail.com:uvb6xahy"); break;
-}
+            }
         if (mention == null) return; 
         message.delete();
         mentionMessage = message.content.slice (8)
@@ -222,9 +224,13 @@ client.on('guildMemberRemove' , member => {
         .setDescription("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
         .setColor("00FF00")
         message.channel.send(embed);
-    }
-
-        if (message.content === '+pgen fortnite') && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
+        cooldown(message.author, 300);
+        }
+      });
+    
+           client.on('message', (message) => {
+        if (message.author.bot || cooldowns.has(message.author)) return;
+        if (message.content === '+pgen fortnite') && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
             switch (random3) {
@@ -269,7 +275,7 @@ client.on('guildMemberRemove' , member => {
                 case 38: mention.send ("jasigala13@gmail.com:131351Ja"); break;  
                 case 39: mention.send ("baxterbarni@gmail.com:Sulim1967"); break;  
                 case 40: mention.send ("cleberlm@gmail.com:zeber1681"); break;  
-}
+                }
             if (mention == null) return; 
             message.delete();
             mentionMessage = message.content.slice (8)
@@ -278,8 +284,9 @@ client.on('guildMemberRemove' , member => {
             .setDescription("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor("00FF00")
             message.channel.send(embed);
-          
-        } 
+            cooldown(message.author, 180);
+            }
+          });
   
     if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
