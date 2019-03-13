@@ -4,6 +4,8 @@ const discord = require ('discord.js');
 
 const cooldowns = new Set();
 
+const stupid = new Set();
+
  client.on ("ready", () => {
      console.log ("ready!");
 
@@ -82,7 +84,16 @@ client.on('guildMemberRemove' , member => {
         setTimeout(() => cooldowns.delete(user), time * 1000);
         console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
        embed = new discord.RichEmbed ()
-       .setDescription ("Please Wait 10 seconds before using this command again !")
+       .setDescription ("Please Wait 5 Minutes Before Using This Command Again :thumbup: !")
+       .setColor ("00ff00")
+       message.channel.send (embed);
+      }      
+  function cooldown(user, time) {
+        stupid.add(user);
+        setTimeout(() => stupid.delete(user), time * 1000);
+        console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
+       embed = new discord.RichEmbed ()
+       .setDescription ("Please Wait 3 Minutes Before Using This Command Again :thumbup: !")
        .setColor ("00ff00")
        message.channel.send (embed);
       }      
@@ -229,8 +240,8 @@ client.on('guildMemberRemove' , member => {
       });
     
            client.on('message', (message) => {
-        if (message.author.bot || cooldowns.has(message.author)) return;
-        if (message.content === '+pgen fortnite') && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+        if (message.author.bot || stupid.has(message.author)) return;
+        if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
             switch (random3) {
