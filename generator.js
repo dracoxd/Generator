@@ -227,7 +227,7 @@ client.on('guildMemberRemove' , member => {
         mentionMessage = message.content.slice (8)
         mention.send ();
         embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Premium Fortnite Account, Please Check Your DM's :thumbup: (Wait 5 Minutes Before Using This Command Again)")
+        .setDescription("I Have Successfully Sent You The Fortnite Account, Please Check Your DM's :thumbup: (Wait 5 Minutes Before Using This Command Again)")
         .setColor("00FF00")
         message.channel.send(embed);
         cooldown(message.author, 300);
