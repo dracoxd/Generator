@@ -82,7 +82,7 @@ client.on('guildMemberRemove' , member => {
         setTimeout(() => cooldowns.delete(user), time * 1000);
         console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
        embed = new discord.RichEmbed ()
-       .setDescription ("Please wait 10 seconds before using this command again !")
+       .setDescription ("Please Wait 10 seconds before using this command again !")
        .setColor ("00ff00")
        message.channel.send (embed);
       }      
@@ -115,10 +115,10 @@ client.on('guildMemberRemove' , member => {
 
     if (msg.startsWith (prefix + "creator")) {
         embed = new discord.RichEmbed ()
-        .setAuthor ("Creator of FriendlyBot") 
-        .setDescription ("Credits to Skanheroo for : \n coding and creating me !")
-        .setFooter ("Thank Skanheroo#5277 for creating me!")
-        .setThumbnail ("https://cdn.discordapp.com/attachments/553669028564959290/553856357753946112/unknown.png")
+        .setAuthor ("Creator of Generator") 
+        .setDescription ("Credits to Clusive for : \n coding and creating me !")
+        .setFooter ("Thank Clusive#2851 for creating me!")
+        .setThumbnail ("https://cdn.discordapp.com/attachments/554413918231986244/555429332034519082/a.png")
         .setColor ("00ff00")
         message.channel.send (embed);
     }
