@@ -224,7 +224,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
     }
 
-        if (message.content === '+gen fortnite') && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
+        if (message.content === '+pgen fortnite') && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
             switch (random3) {
@@ -275,7 +275,7 @@ client.on('guildMemberRemove' , member => {
             mentionMessage = message.content.slice (8)
             mention.send ();
             embed = new discord.RichEmbed()
-            .setDescription("I have successfully sent u the fortnite account ! Please cheack your DMs:thumbup:")
+            .setDescription("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor("00FF00")
             message.channel.send(embed);
           
