@@ -232,7 +232,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
         cooldown(message.author, 300);
         }
-      })
+      });
     
   client.on('message', (message) => { 
           if (message.channel.id !== '551484526262747144') return
@@ -293,7 +293,7 @@ client.on('guildMemberRemove' , member => {
             message.channel.send(embed); 
             skanherooo(message.author, 180);
             }
-          }) 
+          });
   
     if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
