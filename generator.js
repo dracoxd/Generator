@@ -4,7 +4,7 @@ const discord = require ('discord.js');
 
 const cooldowns = new Set();
 
-const stupid = new Set();
+const stupidclusive = new Set();
 
  client.on ("ready", () => {
      console.log ("ready!");
@@ -82,18 +82,16 @@ client.on('guildMemberRemove' , member => {
   function cooldown(user, time) {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
-        console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
        embed = new discord.RichEmbed ()
-       .setDescription ("Please Wait 5 Minutes Before Using This Command Again :thumbup: !")
+       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
        .setColor ("00ff00")
        message.channel.send (embed);
-      }      
-  function cooldown(user, time) {
-        stupid.add(user);
-        setTimeout(() => stupid.delete(user), time * 1000);
-        console.log(`${user.tag} (${user.id}) is cooling down for ${time} seconds`);
+      }  
+  function clusive(user, time) {
+        stupidclusive.add(user);
+        setTimeout(() => stupidclusive.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription ("Please Wait 3 Minutes Before Using This Command Again :thumbup: !")
+       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
        .setColor ("00ff00")
        message.channel.send (embed);
       }      
@@ -101,7 +99,7 @@ client.on('guildMemberRemove' , member => {
     if (msg.startsWith (prefix + "hello")) {
         message.reply ("Hi!");
     }
-    
+  
     if (msg.startsWith (prefix + "infosss")) {
         embed = new discord.RichEmbed ()
             .setAuthor ("?? INVITE REWARDS ??")
@@ -237,10 +235,10 @@ client.on('guildMemberRemove' , member => {
         message.channel.send(embed);
         cooldown(message.author, 300);
         }
-      });
+      })
     
            client.on('message', (message) => {
-        if (message.author.bot || stupid.has(message.author)) return;
+        if (message.author.bot || stupidclusive.has(message.author)) return;
         if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -295,9 +293,9 @@ client.on('guildMemberRemove' , member => {
             .setDescription("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor("00FF00")
             message.channel.send(embed);
-            cooldown(message.author, 180);
+            clusive(message.author, 180);
             }
-          });
+          })
   
     if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 30;
