@@ -176,7 +176,7 @@ client.on('guildMemberRemove' , member => {
     }
 
         if (message.content === '+gen fortnite') && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
-        number = 30;
+        number = 34;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
             case 1: mention.send ("acatao1999@gmail.com:brasil10"); break;  
