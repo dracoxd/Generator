@@ -82,10 +82,7 @@ client.on('guildMemberRemove' , member => {
         function cooldown(user, time) {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
-       embed = new discord.RichEmbed ()
-       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`)
-       .setColor ("00ff00")
-       message.channel.send (embed);
+       console.log(`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`);
       }  
       
 
@@ -230,7 +227,7 @@ client.on('guildMemberRemove' , member => {
         mentionMessage = message.content.slice (8)
         mention.send ();
         embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
+        .setDescription("I Have Successfully Sent You The Premium Fortnite Account, Please Check Your DM's :thumbup: (Wait 5 Minutes Before Using This Command Again)")
         .setColor("00FF00")
         message.channel.send(embed);
         cooldown(message.author, 300);
@@ -291,7 +288,7 @@ client.on('guildMemberRemove' , member => {
             mentionMessage = message.content.slice (8)
             mention.send ();
             embed = new discord.RichEmbed()
-            .setDescription("I Have Successfully Sent You The Premium Fortnite Account, Check DM's :thumbup: (Wait 5 Minutes Before Using This Command Again)")
+            .setDescription("I Have Successfully Sent You The Premium Fortnite Account, Please Check Your DM's :thumbup: (Wait 3 Minutes Before Using This Command Again)")
             .setColor("00FF00")
             message.channel.send(embed); 
             skanherooo(message.author, 180);
