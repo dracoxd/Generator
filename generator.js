@@ -78,22 +78,22 @@ client.on('guildMemberRemove' , member => {
         }
         answered = false;
     }
-        if (message.channel.id !== '551484524941410334') return
+
         function cooldown(user, time) {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :joy:`)
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`)
        .setColor ("00ff00")
        message.channel.send (embed);
       }  
       
-  if (message.channel.id !== '551484526262747144') return
+
       function skanherooo(user, time) {
         coolguy.add(user);
         setTimeout(() => coolguy.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :joy:`)
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`)
        .setColor ("00ff00")
        message.channel.send (embed);
       }      
@@ -187,9 +187,10 @@ client.on('guildMemberRemove' , member => {
     }
 
          client.on('message', (message) => {
-          if (message.channel.id !== '551484524941410334') return
-        if (message.author.bot || cooldowns.has(message.author)) return;
-        if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
+ client.on('message', (message) => {
+          if (message.channel.id !== '524572831573344276') return
+          if (message.author.bot || coolguy.has(message.author)) return;
+          if (message.content.startsWith ("+gen fortnite) && message.member.hasPermission ("VIEW_AUDIT_lOG")) {
         number = 34;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         switch (random2) {
