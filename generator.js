@@ -48,6 +48,10 @@ client.on('guildMemberRemove' , member => {
     msg = message.content.toLowerCase();
 
     let mention = message.mentions.users.first() || message.author
+    
+    let b = ['thebigkid27@gmail.com:Cardinals27', 'fengyyml@163.com:356126153f', 'andron2002@outlook.com:Andron2001', 'crazyaussy@hotmail.ca:Austyn2002', 'samsung5000@gmail.com:G3d3g4fl3r', 'sinkay_gw2@hotmail.com:soloyo90', 'ascalonn@hotmail.co.uk:12ax7wbB', 'laclin127@gmail.com:hello1234', 'devilsagony3@gmail.com:Happyzone1', 'courtney.valentin@yahoo.com:Kangaroo1964']
+
+    let a = ['thebigkid27@gmail.com:Cardinals27', 'fengyyml@163.com:356126153f', 'andron2002@outlook.com:Andron2001', 'crazyaussy@hotmail.ca:Austyn2002', 'samsung5000@gmail.com:G3d3g4fl3r', 'sinkay_gw2@hotmail.com:soloyo90', 'ascalonn@hotmail.co.uk:12ax7wbB', 'laclin127@gmail.com:hello1234', 'devilsagony3@gmail.com:Happyzone1', 'courtney.valentin@yahoo.com:Kangaroo1964']
 
     if (msg.startsWith (prefix + "send")) {
         if (mention == null) { return; }
@@ -79,18 +83,23 @@ client.on('guildMemberRemove' , member => {
         answered = false;
     }
 
-        function cooldown(user, time) {
+ function cooldown(user, time) {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
-       console.log(`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`);
-      }  
-      
+       embed = new discord.RichEmbed ()
+       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
+       .setColor ("00ff00")
+       message.channel.send (embed);
+      }      
 
       function skanherooo(user, time) {
         coolguy.add(user);
         setTimeout(() => coolguy.delete(user), time * 1000);
-       console.log(`You Have To Wait ${time} Seconds Before Using This Command Again :slight_smile:`);
-      }
+       embed = new discord.RichEmbed ()
+       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
+       .setColor ("00ff00")
+       message.channel.send (embed);
+      }      
   
     if (msg.startsWith (prefix + "hello")) {
         message.reply ("Hi!");
@@ -180,155 +189,18 @@ client.on('guildMemberRemove' , member => {
         message.channel.send ("This Guy Is The Founder ! Clusive#2851", {files: ["https://cdn.discordapp.com/attachments/554413918231986244/554444981985607709/a.png"]});
     }
 
-  client.on('message', (message) => {
-          if (message.channel.id !== '551484524941410334') return 
-          if (cooldowns.has(message.author)) return;
-          if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
-        number = 34;
-        var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random2) {
-            case 1: mention.send ("acatao1999@gmail.com:brasil10"); break;  
-            case 2: mention.send ("psilvacaeiro@gmail.com:maquinas01"); break;  
-            case 3: mention.send ("coltonharris1991@gmail.com:colton14"); break;  
-            case 4: mention.send ("Antonioalborea@gmail.com:scandone94"); break;  
-            case 5: mention.send ("brucesutton4@gmail.com:prickle4"); break;  
-            case 6: mention.send ("thomasjllobmx@gmail.com:thomasbmx1"); break;  
-            case 7: mention.send ("hitscity514@gmail.com:montreal514"); break;
-            case 8: mention.send ("racinemathieu77@gmail.com:football972"); break;  
-            case 9: mention.send ("amartincek@gmail.com:31051992am"); break;  
-            case 10: mention.send ("Omarhediya@gmail.com:callofduty99"); break;  
-            case 11: mention.send ("josericardo19942804@gmail.com:lidiane2805"); break;  
-            case 12: mention.send ("jenifertorres12345@gmail.com:wuapa789"); break;  
-            case 13: mention.send ("ostliej@gmail.com:bitch117"); break;  
-            case 14: mention.send ("Dorso.wd@gmail.com:soyrevago7"); break;  
-            case 15: mention.send ("mahdi.alkhabbaz9@gmail.com:123789456R"); break;  
-            case 16: mention.send ("flowesflow@gmail.com:Putoner123"); break;  
-            case 17: mention.send ("aserral@gmail.com:inicio14"); break;  
-            case 18: mention.send ("maggotkai@gmail.com:kaique07"); break;  
-            case 19: mention.send ("se2h1979@gmail.com:Hermanas2"); break; 
-            case 20: mention.send ("marcusbertolino@gmail.com:abra2905"); break;  
-            case 21: mention.send ("magnus54michael@gmail.com:mike67800"); break;  
-            case 22: mention.send ("vaka46@gmail.com:Vaka7380"); break;  
-            case 23: mention.send ("christianr2922@gmail.com:pendejo85"); break;  
-            case 24: mention.send ("h.almusawa@gmail.com:hussain00"); break; 
-            case 25: mention.send ("ysadre8@gmail.com:carvanho007"); break; 
-            case 26: mention.send ("yardensap2000@gmail.com:yarden2000"); break;  
-            case 27: mention.send ("baleeghsm@gmail.com:Baleegh83"); break;
-            case 28: mention.send ("carlosforosco@gmail.com:sarita97"); break;
-            case 29: mention.send ("salinarramos@gmail.com:bfranco340"); break;
-            case 30: mention.send ("kdbramwell@gmail.com:Zergling2"); break;
-            case 31: mention.send ("adrianjrentka@gmail.com:adibadi21"); break;
-            case 32: mention.send ("crapaezgi6@gmail.com:ccaappgg666"); break;
-            case 33: mention.send ("Antonioalborea@gmail.com:scandone94"); break;
-            case 34: mention.send ("netromrex@gmail.com:uvb6xahy"); break;
+        if (message.content.startsWith ("+gen") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+            if (message.channel.id !== '524572831573344276') return
+            if (message.author.bot || coolguy.has(message.author)) return
+            mention.send('Your acc is ' + a[Math.floor(Math.random() * 10)])
+            embed = new discord.RichEmbed ()
+            .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
+            .setColor ("#")
+            message.channel.send(embed);
+          skanherooo(message.author, 20);
             }
-        if (mention == null) return; 
-        message.delete();
-        mentionMessage = message.content.slice (8)
-        mention.send ();
-        embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Fortnite Account, Please Check Your DM's :thumbup: (Wait 5 Minutes Before Using This Command Again)")
-        .setColor("00FF00")
-        message.channel.send(embed);
-        cooldown(message.author, 300);
-        }
-      });
     
-  client.on('message', (message) => { 
-          if (message.channel.id !== '551484526262747144') return
-          if (coolguy.has(message.author)) return;
-          if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
-            number = 40;
-            var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-            switch (random3) {
-                case 1: mention.send ("chris.g.counts@gmail.com:Monica55"); break;
-                case 1: mention.send ("coigmaria@gmail.com:medic1na"); break;
-                case 2: mention.send ("chanoalbo10@gmail.com:catalina13"); break;  
-                case 3: mention.send ("fabio.fernandezv@gmail.com:slpmex26"); break;  
-                case 4: mention.send ("julien.serrano77@gmail.com:maison324"); break;  
-                case 5: mention.send ("andyziv17@gmail.com:walter16"); break;
-                case 6: mention.send ("paarthdave1@gmail.com:zxcvbnm231"); break;  
-                case 7: mention.send ("jaimefernandezgomez8@gmail.com:montenegro0"); break;  
-                case 8: mention.send ("moenia420@gmail.com:lerma1976"); break;
-                case 9: mention.send ("matias.torocabrera19@gmail.com:matias.1995"); break;
-                case 10: mention.send ("andersond@gmail.com:unit0174"); break;  
-                case 11: mention.send ("alessandrofiore20973511@gmail.com:sucazzi97"); break;  
-                case 12: mention.send ("eduardo.espinoza16@gmail.com:thelalox1992"); break;  
-                case 13: mention.send ("emilia.jalaja@gmail.com:gryffindor16"); break;  
-                case 14: mention.send ("griduda@gmail.com:q1w2e3r4"); break;  
-                case 15: mention.send ("theharoontv@gmail.com:google91"); break;  
-                case 16: mention.send ("pezzottaandrea8@gmail.com:andrea123"); break;  
-                case 17: mention.send ("emilioparedez@gmail.com:emilio4864"); break;  
-                case 18: mention.send ("raghav288@gmail.com:jyothi288"); break;  
-                case 19: mention.send ("joaofcsouza@gmail.com:laralaf21"); break; 
-                case 20: mention.send ("briandomi89@gmail.com:lunita89"); break;
-                case 21: mention.send ("tommyjurgensen@gmail.com:davidvilla7"); break;  
-                case 22: mention.send ("sebastianmartinmenendez@gmail.com:bautista2008"); break;  
-                case 23: mention.send ("ibrainm@gmail.com:id21507"); break;
-                case 24: mention.send ("ivandelahozkipke@gmail.com:kaki1100"); break;
-                case 25: mention.send ("caio.quinilato@gmail.com:elfos123"); break;
-                case 26: mention.send ("naderfuad7@gmail.com:nn123456"); break;  
-                case 27: mention.send ("qumberali1@gmail.com:moneyrocks1"); break;  
-                case 28: mention.send ("nassemom@gmail.com:omom7070"); break;  
-                case 29: mention.send ("pelael87@gmail.com:nare2015"); break;  
-                case 30: mention.send ("matyy102@gmail.com:indiana102"); break;
-                case 31: mention.send ("gabriel.jacy@gmail.com:gabriel26554368"); break;
-                case 32: mention.send ("alejandromztjr@gmail.com:chivas123"); break; 
-                case 33: mention.send ("giovanniromeo251@gmail.com:giovivale99"); break;  
-                case 34: mention.send ("burkiemartin29@gmail.com:warrior36"); break;  
-                case 35: mention.send ("mcaronti@gmail.com:napoleon10"); break;
-                case 36: mention.send ("aayushirgamji@gmail.com:Aayushi99"); break;  
-                case 37: mention.send ("colinbradley96@gmail.com:numbers1"); break;  
-                case 38: mention.send ("jasigala13@gmail.com:131351Ja"); break;  
-                case 39: mention.send ("baxterbarni@gmail.com:Sulim1967"); break;  
-                case 40: mention.send ("cleberlm@gmail.com:zeber1681"); break;  
-                }
-            if (mention == null) return; 
-            message.delete();
-            mentionMessage = message.content.slice (8)
-            mention.send ();
-            embed = new discord.RichEmbed()
-            .setDescription("I Have Successfully Sent You The Premium Fortnite Account, Please Check Your DM's :thumbup: (Wait 3 Minutes Before Using This Command Again)")
-            .setColor("00FF00")
-            message.channel.send(embed); 
-            skanherooo(message.author, 180);
-            }
-          });
-  
-    if (msg.startsWith (prefix + "gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
-        number = 30;
-        var random4 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random4) {
-            case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
-            case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
-            case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
-            case 4: mention.send ("r1qwer1r@gmail.com:1qfghjo0"); break;
-            case 5: mention.send ("bill_melendez@msn.com:ma9n0lia"); break;
-            case 6: mention.send ("wgjames2@gmail.com:4808scar"); break;
-            case 7: mention.send ("damiox@gmail.com:Riverplate"); break;
-            case 8: mention.send ("gabrdz19@gmail.com:peewee18"); break;
-            case 9: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 10: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 11: mention.send ("kevincrozier@me.com:Lindzo29"); break;
-            case 12: mention.send ("cheyannenikolaus@hotmail.com:chacha1987"); break;
-            case 13: mention.send ("stegoego@gmail.com:Mamaego13142"); break;
-            case 14: mention.send ("unreinmj@gmail.com:abbybell01"); break;
-            case 15: mention.send ("tre9696@yahoo.com:Chsbears14"); break;
-            case 16: mention.send ("bpodhajsky@yahoo.com:bentley123"); break;
-            case 17: mention.send ("nachorq@hotmail.com:29580942"); break;
-            case 18: mention.send ("brandon.berry01@gmail.com:volcom55"); break;
-            case 19: mention.send ("etritsch84@gmail.com:jayhawks84"); break;
-            case 20: mention.send ("adondevai@gmail.com:terapia123"); break;
-            }
-        if (mention == null) return;
-        message.delete();
-        mentionMessage = message.content.slice (8)
-        mention.send ();
-        embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Spotify Account ! Please Check Your DMs:thumbup:")
-        .setColor("00FF00")
-        message.channel.send(embed);
-    }
+
 
     if (msg.startsWith (prefix + "pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
         number = 20;
