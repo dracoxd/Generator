@@ -89,7 +89,7 @@ client.on('guildMemberRemove' , member => {
         cooldowns.add(user);
         setTimeout(() => cooldowns.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
        .setColor ("FF00FF")
        message.channel.send (embed);
       }      
@@ -98,7 +98,7 @@ client.on('guildMemberRemove' , member => {
         coolguy.add(user);
         setTimeout(() => coolguy.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
-       .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
        .setColor ("FF00FF")
        message.channel.send (embed);
       }      
