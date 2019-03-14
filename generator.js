@@ -434,9 +434,9 @@ function clusive(user, time) {
   
       if (msg.startsWith("+stock")) {
         embed = new discord.RichEmbed ()
-        .setAuthor("STOCK")
-        .setDescription("There Is Currectly 300 Fortnite Account In Stock \n There Is Currently 400 Premuim Forntite Account In Stock")
-        .setFooter("We will be restocking everyday!")
+        .setAuthor("Accounts That Are In Stock")
+        .setDescription("__**Fortnite**__: 700 \n __**Spotify**__: 1200")
+        .setFooter("We Will Be Adding Accounts Everyday!")
         .setColor("#FF00FF")
         message.channel.send(embed);
     }
