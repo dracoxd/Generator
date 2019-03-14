@@ -205,7 +205,7 @@ client.on('guildMemberRemove' , member => {
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldowns.has(message.author)) return
-                mention.send('**Your Premuim Account Is: **' + b[Math.floor(Math.random() * 40)])
+                mention.send('**Your Premuim Fortnite Account Is: **' + b[Math.floor(Math.random() * 40)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
