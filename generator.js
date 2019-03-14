@@ -361,6 +361,7 @@ client.on('guildMemberRemove' , member => {
 'millsthomasm@yahoo.com:Off2ndr | Subscription: Premium | Recurring date: | Status:Premium for Family',
 'knight444166@hotmail.com:46986414 | Subscription: Premium | Recurring date: | Status:Premium for Family',]
  
+
     if (msg.startsWith (prefix + "send")) {
         if (mention == null) { return; }
         message.delete();
@@ -429,6 +430,15 @@ function clusive(user, time) {
   
     if (msg.startsWith (prefix + "hello")) {
         message.reply ("Hi!");
+    }
+  
+      if (msg.startsWith("+stock")) {
+        embed = new discord.RichEmbed ()
+        .setAuthor("STOCK")
+        .setDescription("There Is Currectly 300 Fortnite Account In Stock \n There Is Currently 400 Premuim Forntite Account In Stock")
+        .setFooter("We will be restocking everyday!")
+        .setColor("#FF00FF")
+        message.channel.send(embed);
     }
   
     if (msg.startsWith (prefix + "infosss")) {
