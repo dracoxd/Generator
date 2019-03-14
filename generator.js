@@ -191,7 +191,7 @@ client.on('guildMemberRemove' , member => {
         message.channel.send ("This Guy Is The Founder ! Clusive#2851", {files: ["https://cdn.discordapp.com/attachments/554413918231986244/554444981985607709/a.png"]});
     }
 
-        if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+        if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || coolguy.has(message.author)) return
             mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 34)])
