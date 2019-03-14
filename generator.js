@@ -182,7 +182,7 @@ client.on('guildMemberRemove' , member => {
 
   client.on('message', (message) => {
           if (message.channel.id !== '551484524941410334') return 
-          if (message.author.bot || cooldowns.has(message.author)) return;
+          if (cooldowns.has(message.author)) return;
           if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 34;
         var random2 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -236,7 +236,7 @@ client.on('guildMemberRemove' , member => {
     
   client.on('message', (message) => { 
           if (message.channel.id !== '551484526262747144') return
-          if (message.author.bot || coolguy.has(message.author)) return;
+          if (coolguy.has(message.author)) return;
           if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
             number = 40;
             var random3 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
