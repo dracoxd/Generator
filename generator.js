@@ -189,17 +189,27 @@ client.on('guildMemberRemove' , member => {
         message.channel.send ("This Guy Is The Founder ! Clusive#2851", {files: ["https://cdn.discordapp.com/attachments/554413918231986244/554444981985607709/a.png"]});
     }
 
-        if (message.content.startsWith ("+gen") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
-            if (message.channel.id !== '524572831573344276') return
+        if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+            if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || coolguy.has(message.author)) return
-            mention.send('Your acc is ' + a[Math.floor(Math.random() * 10)])
+            mention.send('Your Fortnite Acc Is: ' + a[Math.floor(Math.random() * 10)])
             embed = new discord.RichEmbed ()
             .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
-            .setColor ("#")
+            .setColor ("#FF00FF")
             message.channel.send(embed);
-          skanherooo(message.author, 20);
+          skanherooo(message.author, 300);
             }
-    
+  
+              if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+                if (message.channel.id !== '551484526262747144') return
+                if (message.author.bot || cooldowns.has(message.author)) return
+                mention.send('Your Premuim Acc Is: ' + b[Math.floor(Math.random() * 10)])
+                embed = new discord.RichEmbed ()
+                    .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
+                    .setColor ("#FF00FF")
+                    message.channel.send(embed);
+              cooldown(message.author, 180);
+                } 
 
 
     if (msg.startsWith (prefix + "pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
