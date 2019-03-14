@@ -49,9 +49,11 @@ client.on('guildMemberRemove' , member => {
 
     let mention = message.mentions.users.first() || message.author
     
-    let b = ['thebigkid27@gmail.com:Cardinals27', 'fengyyml@163.com:356126153f', 'andron2002@outlook.com:Andron2001', 'crazyaussy@hotmail.ca:Austyn2002', 'samsung5000@gmail.com:G3d3g4fl3r', 'sinkay_gw2@hotmail.com:soloyo90', 'ascalonn@hotmail.co.uk:12ax7wbB', 'laclin127@gmail.com:hello1234', 'devilsagony3@gmail.com:Happyzone1', 'courtney.valentin@yahoo.com:Kangaroo1964']
+    let a = ['acatao1999@gmail.com:brasil10', 'psilvacaeiro@gmail.com:maquinas01', 'coltonharris1991@gmail.com:colton14', 'Antonioalborea@gmail.com:scandone94', 'brucesutton4@gmail.com:prickle4', 'thomasjllobmx@gmail.com:thomasbmx1', 'hitscity514@gmail.com:montreal514', 'racinemathieu77@gmail.com:football972', 'amartincek@gmail.com:31051992am', 'Omarhediya@gmail.com:callofduty99', 'josericardo19942804@gmail.com:lidiane2805', 'jenifertorres12345@gmail.com:wuapa789', 'ostliej@gmail.com:bitch117', 'Dorso.wd@gmail.com:soyrevago7', 'mahdi.alkhabbaz9@gmail.com:123789456R', 'flowesflow@gmail.com:Putoner123', 'aserral@gmail.com:inicio14', 'maggotkai@gmail.com:kaique07', 'se2h1979@gmail.com:Hermanas2', 'marcusbertolino@gmail.com:abra2905', 'magnus54michael@gmail.com:mike67800', 'vaka46@gmail.com:Vaka7380', 'christianr2922@gmail.com:pendejo85', 'h.almusawa@gmail.com:hussain00', 'ysadre8@gmail.com:carvanho007', 'yardensap2000@gmail.com:yarden2000', 'baleeghsm@gmail.com:Baleegh83',
+ 'carlosforosco@gmail.com:sarita97', 'salinarramos@gmail.com:bfranco340', 'kdbramwell@gmail.com:Zergling2', 'adrianjrentka@gmail.com:adibadi21', 'crapaezgi6@gmail.com:ccaappgg666', 'Antonioalborea@gmail.com:scandone94', 'netromrex@gmail.com:uvb6xahy']
 
-    let a = ['thebigkid27@gmail.com:Cardinals27', 'fengyyml@163.com:356126153f', 'andron2002@outlook.com:Andron2001', 'crazyaussy@hotmail.ca:Austyn2002', 'samsung5000@gmail.com:G3d3g4fl3r', 'sinkay_gw2@hotmail.com:soloyo90', 'ascalonn@hotmail.co.uk:12ax7wbB', 'laclin127@gmail.com:hello1234', 'devilsagony3@gmail.com:Happyzone1', 'courtney.valentin@yahoo.com:Kangaroo1964']
+    let b = ['chris.g.counts@gmail.com:Monica55', 'coigmaria@gmail.com:medic1na', 'chanoalbo10@gmail.com:catalina13', 'fabio.fernandezv@gmail.com:slpmex26', 'julien.serrano77@gmail.com:maison324', 'andyziv17@gmail.com:walter16', 'paarthdave1@gmail.com:zxcvbnm231', 'jaimefernandezgomez8@gmail.com:montenegro0', 'moenia420@gmail.com:lerma1976', 'matias.torocabrera19@gmail.com:matias.1995', 'andersond@gmail.com:unit0174', 'alessandrofiore20973511@gmail.com:sucazzi97', 'eduardo.espinoza16@gmail.com:thelalox1992', 'emilia.jalaja@gmail.com:gryffindor16', 'griduda@gmail.com:q1w2e3r4', 'theharoontv@gmail.com:google91', 'pezzottaandrea8@gmail.com:andrea123', 'emilioparedez@gmail.com:emilio4864', 'raghav288@gmail.com:jyothi288', 'joaofcsouza@gmail.com:laralaf21', 'briandomi89@gmail.com:lunita89', 'tommyjurgensen@gmail.com:davidvilla7', 'sebastianmartinmenendez@gmail.com:bautista2008', 'ibrainm@gmail.com:id21507', 'ivandelahozkipke@gmail.com:kaki1100', 'caio.quinilato@gmail.com:elfos123', 
+'naderfuad7@gmail.com:nn123456', 'qumberali1@gmail.com:moneyrocks1', 'nassemom@gmail.com:omom7070', 'pelael87@gmail.com:nare2015', 'matyy102@gmail.com:indiana102', 'gabriel.jacy@gmail.com:gabriel26554368', 'alejandromztjr@gmail.com:chivas123', 'giovanniromeo251@gmail.com:giovivale99', 'burkiemartin29@gmail.com:warrior36', 'mcaronti@gmail.com:napoleon10', 'aayushirgamji@gmail.com:Aayushi99', 'colinbradley96@gmail.com:numbers1', 'jasigala13@gmail.com:131351Ja', 'baxterbarni@gmail.com:Sulim1967', 'cleberlm@gmail.com:zeber1681']
 
     if (msg.startsWith (prefix + "send")) {
         if (mention == null) { return; }
@@ -88,7 +90,7 @@ client.on('guildMemberRemove' , member => {
         setTimeout(() => cooldowns.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
        .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
-       .setColor ("00ff00")
+       .setColor ("FF00FF")
        message.channel.send (embed);
       }      
 
@@ -97,7 +99,7 @@ client.on('guildMemberRemove' , member => {
         setTimeout(() => coolguy.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
        .setDescription (`U have to wait ${time} seconds before using this command again, ${user.tag}`)
-       .setColor ("00ff00")
+       .setColor ("FF00FF")
        message.channel.send (embed);
       }      
   
@@ -192,7 +194,7 @@ client.on('guildMemberRemove' , member => {
         if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
             if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || coolguy.has(message.author)) return
-            mention.send('Your Fortnite Acc Is: ' + a[Math.floor(Math.random() * 10)])
+            mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 34)])
             embed = new discord.RichEmbed ()
             .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
@@ -203,7 +205,7 @@ client.on('guildMemberRemove' , member => {
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldowns.has(message.author)) return
-                mention.send('Your Premuim Acc Is: ' + b[Math.floor(Math.random() * 10)])
+                mention.send('**Your Premuim Account Is: **' + b[Math.floor(Math.random() * 40)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
