@@ -6,6 +6,10 @@ const cooldowns = new Set();
 
 const coolguy = new Set();
 
+const coolguys = new Set();
+
+const cooldude = new Set();
+
  client.on ("ready", () => {
      console.log ("ready!");
 
@@ -54,7 +58,9 @@ client.on('guildMemberRemove' , member => {
 
     let b = ['chris.g.counts@gmail.com:Monica55', 'coigmaria@gmail.com:medic1na', 'chanoalbo10@gmail.com:catalina13', 'fabio.fernandezv@gmail.com:slpmex26', 'julien.serrano77@gmail.com:maison324', 'andyziv17@gmail.com:walter16', 'paarthdave1@gmail.com:zxcvbnm231', 'jaimefernandezgomez8@gmail.com:montenegro0', 'moenia420@gmail.com:lerma1976', 'matias.torocabrera19@gmail.com:matias.1995', 'andersond@gmail.com:unit0174', 'alessandrofiore20973511@gmail.com:sucazzi97', 'eduardo.espinoza16@gmail.com:thelalox1992', 'emilia.jalaja@gmail.com:gryffindor16', 'griduda@gmail.com:q1w2e3r4', 'theharoontv@gmail.com:google91', 'pezzottaandrea8@gmail.com:andrea123', 'emilioparedez@gmail.com:emilio4864', 'raghav288@gmail.com:jyothi288', 'joaofcsouza@gmail.com:laralaf21', 'briandomi89@gmail.com:lunita89', 'tommyjurgensen@gmail.com:davidvilla7', 'sebastianmartinmenendez@gmail.com:bautista2008', 'ibrainm@gmail.com:id21507', 'ivandelahozkipke@gmail.com:kaki1100', 'caio.quinilato@gmail.com:elfos123', 
 'naderfuad7@gmail.com:nn123456', 'qumberali1@gmail.com:moneyrocks1', 'nassemom@gmail.com:omom7070', 'pelael87@gmail.com:nare2015', 'matyy102@gmail.com:indiana102', 'gabriel.jacy@gmail.com:gabriel26554368', 'alejandromztjr@gmail.com:chivas123', 'giovanniromeo251@gmail.com:giovivale99', 'burkiemartin29@gmail.com:warrior36', 'mcaronti@gmail.com:napoleon10', 'aayushirgamji@gmail.com:Aayushi99', 'colinbradley96@gmail.com:numbers1', 'jasigala13@gmail.com:131351Ja', 'baxterbarni@gmail.com:Sulim1967', 'cleberlm@gmail.com:zeber1681']
-
+    
+    let c = []
+ 
     if (msg.startsWith (prefix + "send")) {
         if (mention == null) { return; }
         message.delete();
@@ -97,6 +103,24 @@ client.on('guildMemberRemove' , member => {
       function skanherooo(user, time) {
         coolguy.add(user);
         setTimeout(() => coolguy.delete(user), time * 1000);
+       embed = new discord.RichEmbed ()
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
+       .setColor ("FF00FF")
+       message.channel.send (embed);
+      }      
+  
+function clusive(user, time) {
+        coolguys.add(user);
+        setTimeout(() => coolguys.delete(user), time * 1000);
+       embed = new discord.RichEmbed ()
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
+       .setColor ("FF00FF")
+       message.channel.send (embed);
+      }      
+
+  function clusives(user, time) {
+        cooldude.add(user);
+        setTimeout(() => cooldude.delete(user), time * 1000);
        embed = new discord.RichEmbed ()
        .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
        .setColor ("FF00FF")
@@ -199,7 +223,7 @@ client.on('guildMemberRemove' , member => {
             .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
             message.channel.send(embed);
-          skanherooo(message.author, 180);
+          skanherooo(message.author, 300);
             }
   
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
@@ -210,44 +234,20 @@ client.on('guildMemberRemove' , member => {
                     .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
                     message.channel.send(embed);
-              cooldown(message.author, 120);
+              cooldown(message.author, 180);
                 } 
 
 
-    if (msg.startsWith (prefix + "pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
-        number = 20;
-        var random5 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random5) {
-            case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
-            case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
-            case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
-            case 4: mention.send ("r1qwer1r@gmail.com:1qfghjo0"); break;
-            case 5: mention.send ("bill_melendez@msn.com:ma9n0lia"); break;
-            case 6: mention.send ("wgjames2@gmail.com:4808scar"); break;
-            case 7: mention.send ("damiox@gmail.com:Riverplate"); break;
-            case 8: mention.send ("gabrdz19@gmail.com:peewee18"); break;
-            case 9: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 10: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 11: mention.send ("kevincrozier@me.com:Lindzo29"); break;
-            case 12: mention.send ("cheyannenikolaus@hotmail.com:chacha1987"); break;
-            case 13: mention.send ("stegoego@gmail.com:Mamaego13142"); break;
-            case 14: mention.send ("unreinmj@gmail.com:abbybell01"); break;
-            case 15: mention.send ("tre9696@yahoo.com:Chsbears14"); break;
-            case 16: mention.send ("bpodhajsky@yahoo.com:bentley123"); break;
-            case 17: mention.send ("nachorq@hotmail.com:29580942"); break;
-            case 18: mention.send ("brandon.berry01@gmail.com:volcom55"); break;
-            case 19: mention.send ("etritsch84@gmail.com:jayhawks84"); break;
-            case 20: mention.send ("adondevai@gmail.com:terapia123"); break;
-            }
-        if (mention == null) return;
-        message.delete();
-        mentionMessage = message.content.slice (8)
-        mention.send ();
-        embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Spotify Account ! Please Check Your DMs:thumbup:")
-        .setColor("00FF00")
-        message.channel.send(embed);
-    }
+                if (message.content.startsWith ("+pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+                if (message.channel.id !== '551484526262747144') return
+                if (message.author.bot || coolguys.has(message.author)) return
+                mention.send('**Your Premuim Spotify Account Is: **' + b[Math.floor(Math.random() * 40)])
+                embed = new discord.RichEmbed ()
+                    .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
+                    .setColor ("#FF00FF")
+                    message.channel.send(embed);
+              cooldown(message.author, 180);
+                } 
 
     if (msg.startsWith (prefix + "gen origin") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
         number = 20;
