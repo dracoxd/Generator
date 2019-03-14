@@ -199,7 +199,7 @@ client.on('guildMemberRemove' , member => {
             .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
             message.channel.send(embed);
-          skanherooo(message.author, 300);
+          skanherooo(message.author, 180);
             }
   
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
@@ -210,7 +210,7 @@ client.on('guildMemberRemove' , member => {
                     .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
                     message.channel.send(embed);
-              cooldown(message.author, 180);
+              cooldown(message.author, 120);
                 } 
 
 
