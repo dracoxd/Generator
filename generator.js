@@ -13,7 +13,7 @@ const cooldude = new Set();
  client.on ("ready", () => {
      console.log ("ready!");
 
-     client.user.setActivity ("Watching 1 Server | +Help");
+     client.user.setActivity ("Watching 3 Server | +Help");
      
      
 
