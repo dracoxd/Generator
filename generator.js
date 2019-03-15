@@ -432,25 +432,6 @@ function clusive(user, time) {
        message.channel.send (embed);
       }      
   
-  function people(user, time) {
-        cooldude.add(user);
-        setTimeout(() => cooldudes.delete(user), time * 1000);
-       embed = new discord.RichEmbed ()
-       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
-       .setColor ("FF00FF")
-       message.channel.send (embed);
-      }    
-  
-  
-  function person(user, time) {
-        cooldude.add(user);
-        setTimeout(() => coolbro.delete(user), time * 1000);
-       embed = new discord.RichEmbed ()
-       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
-       .setColor ("FF00FF")
-       message.channel.send (embed);
-      }      
-  
     if (msg.startsWith (prefix + "hello")) {
         message.reply ("Hi!");
     }
@@ -557,18 +538,7 @@ function clusive(user, time) {
             .setColor ("#FF00FF")
             message.channel.send(embed);
           skanherooo(message.author, 300);
-            }
-          
-            if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
-            if (message.channel.id !== '555903662916894749') return
-            if (message.author.bot || cooldudes.has(message.author)) return
-            mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 34)])
-            embed = new discord.RichEmbed ()
-            .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
-            .setColor ("#FF00FF")
-            message.channel.send(embed);
-          people(message.author, 300);
-            }
+        }
   
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
@@ -579,17 +549,6 @@ function clusive(user, time) {
                     .setColor ("#FF00FF")
                     message.channel.send(embed);
               cooldown(message.author, 180);
-                } 
-
-  if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
-                if (message.channel.id !== '555903664209002496') return
-                if (message.author.bot || coolbro.has(message.author)) return
-                mention.send('**Your Premuim Fortnite Account Is: **' + b[Math.floor(Math.random() * 40)])
-                embed = new discord.RichEmbed ()
-                    .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
-                    .setColor ("#FF00FF")
-                    message.channel.send(embed);
-              person(message.author, 180);
                 } 
   
             if (message.content.startsWith ("+gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
