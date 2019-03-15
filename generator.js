@@ -10,6 +10,10 @@ const coolguys = new Set();
 
 const cooldude = new Set();
 
+const cooldudes = new Set();
+
+const coolbro = new Set();
+
  client.on ("ready", () => {
      console.log ("ready!");
 
@@ -428,6 +432,24 @@ function clusive(user, time) {
        message.channel.send (embed);
       }      
   
+    function skan(user, time) {
+        cooldude.add(user);
+        setTimeout(() => cooldudes.delete(user), time * 1000);
+       embed = new discord.RichEmbed ()
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
+       .setColor ("FF00FF")
+       message.channel.send (embed);
+      }      
+  
+      function skanhero(user, time) {
+        cooldude.add(user);
+        setTimeout(() => coolbro.delete(user), time * 1000);
+       embed = new discord.RichEmbed ()
+       .setDescription (`You Have To Wait ${time} Seconds Before Using This Command Again, ${user.tag}`)
+       .setColor ("FF00FF")
+       message.channel.send (embed);
+      }      
+  
     if (msg.startsWith (prefix + "hello")) {
         message.reply ("Hi!");
     }
@@ -550,7 +572,7 @@ function clusive(user, time) {
             if (message.content.startsWith ("+gen spotify") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || coolguys.has(message.author)) return
-            mention.send('**Your Spotify Account Is: **' + c[Math.floor(Math.random() * 34)])
+            mention.send('**Your Spotify Account Is: **' + c[Math.floor(Math.random() * 100)])
             embed = new discord.RichEmbed ()
             .setDescription ("I Have Successfully Sent You The Spotify Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
@@ -561,7 +583,7 @@ function clusive(user, time) {
                 if (message.content.startsWith ("+pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldude.has(message.author)) return
-                mention.send('**Your Premuim Spotify Account Is: **' + d[Math.floor(Math.random() * 40)])
+                mention.send('**Your Premuim Spotify Account Is: **' + d[Math.floor(Math.random() * 200)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premuim Spotify Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
@@ -569,76 +591,28 @@ function clusive(user, time) {
               clusives(message.author, 180);
                 } 
 
-    if (msg.startsWith (prefix + "gen origin") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
-        number = 20;
-        var random6 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random6) {
-            case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
-            case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
-            case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
-            case 4: mention.send ("r1qwer1r@gmail.com:1qfghjo0"); break;
-            case 5: mention.send ("bill_melendez@msn.com:ma9n0lia"); break;
-            case 6: mention.send ("wgjames2@gmail.com:4808scar"); break;
-            case 7: mention.send ("damiox@gmail.com:Riverplate"); break;
-            case 8: mention.send ("gabrdz19@gmail.com:peewee18"); break;
-            case 9: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 10: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 11: mention.send ("kevincrozier@me.com:Lindzo29"); break;
-            case 12: mention.send ("cheyannenikolaus@hotmail.com:chacha1987"); break;
-            case 13: mention.send ("stegoego@gmail.com:Mamaego13142"); break;
-            case 14: mention.send ("unreinmj@gmail.com:abbybell01"); break;
-            case 15: mention.send ("tre9696@yahoo.com:Chsbears14"); break;
-            case 16: mention.send ("bpodhajsky@yahoo.com:bentley123"); break;
-            case 17: mention.send ("nachorq@hotmail.com:29580942"); break;
-            case 18: mention.send ("brandon.berry01@gmail.com:volcom55"); break;
-            case 19: mention.send ("etritsch84@gmail.com:jayhawks84"); break;
-            case 20: mention.send ("adondevai@gmail.com:terapia123"); break;
+            if (message.content.startsWith ("+gen origin") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
+            if (message.channel.id !== '551484524941410334') return
+            if (message.author.bot || cooldudes.has(message.author)) return
+            mention.send('**Your Origin Account Is: **' + c[Math.floor(Math.random() * 100)])
+            embed = new discord.RichEmbed ()
+            .setDescription ("I Have Successfully Sent You The Spotify Account ! Please Check Your DMs:thumbup:")
+            .setColor ("#FF00FF")
+            message.channel.send(embed);
+          skan(message.author, 300);
             }
-        if (mention == null) return; 
-        message.delete();
-        mentionMessage = message.content.slice (8)
-        mention.send ();
-        embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Origin Account ! Please Check Your DMs:thumbup:")
-        .setColor("00FF00")
-        message.channel.send(embed);
-    }
 
-    if (msg.startsWith (prefix + "pgen origin") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
-        number = 20;
-        var random7 = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        switch (random7) {
-            case 1: mention.send ("sennette@gmail.com:texasexes2003"); break;
-            case 2: mention.send ("msubills63@yahoo.com:Msdawg64"); break;
-            case 3: mention.send ("aishwaryya.sarkar@gmail.com:lph23986769"); break;
-            case 4: mention.send ("r1qwer1r@gmail.com:1qfghjo0"); break;
-            case 5: mention.send ("bill_melendez@msn.com:ma9n0lia"); break;
-            case 6: mention.send ("wgjames2@gmail.com:4808scar"); break;
-            case 7: mention.send ("damiox@gmail.com:Riverplate"); break;
-            case 8: mention.send ("gabrdz19@gmail.com:peewee18"); break;
-            case 9: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 10: mention.send ("nikkicarlin@gmail.com:nikki1969"); break;
-            case 11: mention.send ("kevincrozier@me.com:Lindzo29"); break;
-            case 12: mention.send ("cheyannenikolaus@hotmail.com:chacha1987"); break;
-            case 13: mention.send ("stegoego@gmail.com:Mamaego13142"); break;
-            case 14: mention.send ("unreinmj@gmail.com:abbybell01"); break;
-            case 15: mention.send ("tre9696@yahoo.com:Chsbears14"); break;
-            case 16: mention.send ("bpodhajsky@yahoo.com:bentley123"); break;
-            case 17: mention.send ("nachorq@hotmail.com:29580942"); break;
-            case 18: mention.send ("brandon.berry01@gmail.com:volcom55"); break;
-            case 19: mention.send ("etritsch84@gmail.com:jayhawks84"); break;
-            case 20: mention.send ("adondevai@gmail.com:terapia123"); break;
-            }
-        if (mention == null) return; 
-        message.delete();
-        mentionMessage = message.content.slice (8)
-        mention.send ();
-        embed = new discord.RichEmbed()
-        .setDescription("I Have Successfully Sent You The Origin Account ! Please Check Your DMs:thumbup:")
-        .setColor("00FF00") 
-        message.channel.send(embed);
-    }
-
+                if (message.content.startsWith ("+pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+                if (message.channel.id !== '551484526262747144') return
+                if (message.author.bot || coolbro.has(message.author)) return
+                mention.send('**Your Premuim Origin Account Is: **' + d[Math.floor(Math.random() * 200)])
+                embed = new discord.RichEmbed ()
+                    .setDescription ("I Have Successfully Sent You The Premuim Spotify Account ! Please Check Your DMs:thumbup:")
+                    .setColor ("#FF00FF")
+                    message.channel.send(embed);
+              skanhero(message.author, 180);
+                } 
+  
     if (msg.startsWith ("!write")) {
         editedmessage = message.content.slice (6);
 
