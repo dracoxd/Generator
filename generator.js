@@ -10,10 +10,6 @@ const coolguys = new Set();
 
 const cooldude = new Set();
 
-const cooldudes = new Set();
-
-const coolbro = new Set();
-
  client.on ("ready", () => {
      console.log ("ready!");
 
