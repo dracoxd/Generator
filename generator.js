@@ -364,6 +364,10 @@ client.on('guildMemberRemove' , member => {
 'sjtaylor1@yahoo.com:SpYro9411 | Subscription: Premium | Recurring date: | Status:Premium for Family',
 'millsthomasm@yahoo.com:Off2ndr | Subscription: Premium | Recurring date: | Status:Premium for Family',
 'knight444166@hotmail.com:46986414 | Subscription: Premium | Recurring date: | Status:Premium for Family',]
+    
+    let e = []
+
+    let f = []
  
 
     if (msg.startsWith (prefix + "send")) {
@@ -594,7 +598,7 @@ function clusive(user, time) {
             if (message.content.startsWith ("+gen origin") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || cooldudes.has(message.author)) return
-            mention.send('**Your Origin Account Is: **' + c[Math.floor(Math.random() * 100)])
+            mention.send('**Your Origin Account Is: **' + e[Math.floor(Math.random() * 100)])
             embed = new discord.RichEmbed ()
             .setDescription ("I Have Successfully Sent You The Spotify Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
@@ -602,10 +606,10 @@ function clusive(user, time) {
           skan(message.author, 300);
             }
 
-                if (message.content.startsWith ("+pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
+                if (message.content.startsWith ("+pgen origin") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || coolbro.has(message.author)) return
-                mention.send('**Your Premuim Origin Account Is: **' + d[Math.floor(Math.random() * 200)])
+                mention.send('**Your Premuim Origin Account Is: **' + f[Math.floor(Math.random() * 200)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premuim Spotify Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
