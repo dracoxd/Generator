@@ -617,7 +617,7 @@ function clusive(user, time) {
               skanhero(message.author, 180);
                 } 
   
-    if (msg.startsWith ("!write")) {
+    if (msg.startsWith ("+write")) {
         editedmessage = message.content.slice (6);
 
         client.msgs [message.author.username] = {
@@ -630,7 +630,7 @@ fs.writeFile ("./msgs.json", JSON.stringify (client.msgs, null, 4), err => {
 
     }
 
-    if (msg.startsWith ("!get")) {
+    if (msg.startsWith ("+get")) {
         let _message = client.msgs[message.author.username].message;
         message.channel.send ("" + _message);
     }
@@ -663,7 +663,7 @@ fs.writeFile ("./msgs.json", JSON.stringify (client.msgs, null, 4), err => {
 
 
 client.on('message', message => {
-    if (message.content.split(' ')[0] == '!dm')
+    if (message.content.split(' ')[0] == '+dm')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
            member.send(message.content.substr(3));
