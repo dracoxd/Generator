@@ -57,11 +57,9 @@ client.on('guildMemberRemove' , member => {
 
     let mention = message.mentions.users.first() || message.author
     
-    let a = ['acatao1999@gmail.com:brasil10', 'psilvacaeiro@gmail.com:maquinas01', 'coltonharris1991@gmail.com:colton14', 'Antonioalborea@gmail.com:scandone94', 'brucesutton4@gmail.com:prickle4', 'thomasjllobmx@gmail.com:thomasbmx1', 'hitscity514@gmail.com:montreal514', 'racinemathieu77@gmail.com:football972', 'amartincek@gmail.com:31051992am', 'Omarhediya@gmail.com:callofduty99', 'josericardo19942804@gmail.com:lidiane2805', 'jenifertorres12345@gmail.com:wuapa789', 'ostliej@gmail.com:bitch117', 'Dorso.wd@gmail.com:soyrevago7', 'mahdi.alkhabbaz9@gmail.com:123789456R', 'flowesflow@gmail.com:Putoner123', 'aserral@gmail.com:inicio14', 'maggotkai@gmail.com:kaique07', 'se2h1979@gmail.com:Hermanas2', 'marcusbertolino@gmail.com:abra2905', 'magnus54michael@gmail.com:mike67800', 'vaka46@gmail.com:Vaka7380', 'christianr2922@gmail.com:pendejo85', 'h.almusawa@gmail.com:hussain00', 'ysadre8@gmail.com:carvanho007', 'yardensap2000@gmail.com:yarden2000', 'baleeghsm@gmail.com:Baleegh83',
- 'carlosforosco@gmail.com:sarita97', 'salinarramos@gmail.com:bfranco340', 'kdbramwell@gmail.com:Zergling2', 'adrianjrentka@gmail.com:adibadi21', 'crapaezgi6@gmail.com:ccaappgg666', 'Antonioalborea@gmail.com:scandone94', 'netromrex@gmail.com:uvb6xahy']
+    let a = ['1617112379@qq.com:Abc123456','jamiemathis37@gmail.com:December25','dbowers2004@gmail.com:CoolKid5','techniktim32@gmail.com:Teddet12','caamano.gabriel@yahoo.com:Theman56','xx21tighe10xx@gmail.com:michaeld1','dillon.d.barnes@gmail.com:barnes99','jakenherman7@gmail.com:Shsu2013','blowe9931@gmail.com:JohnCena1','jamiemclean901@gmail.com:newyork11','chiefissoawesome@gmail.com:dragonball7','swims712@gmail.com:Snuggles2','ericc9913@gmail.com:p0l4rb34r','emorythegrove@gmail.com:Dushanbe7!','asunnaaa@gmail.com:Naosei123','ericsand2000@yahoo.com:hotshot2000','jameshalsel2@gmail.com:manman12','mikkel.m.jakobsen@gmail.com:mikkel1998','ahmetadil54@gmail.com:12345aat','salvatoremilanista98@gmail.com:supermario98','ajheronaj@gmail.com:123Ajaj12','safeburn@hotmail.com:Southpark1!','rafic.feel2@hotmail.com:Elfa6666','Pepe.Alexander@web.de:Pepeistcool5','huebner168@gmail.com:Archie123','thesmitis@gmail.com:cocopuffs1','umut-baran33@hotmail.com:kamikaze33','josiahgarlick@gmail.com:Green789','wlpzhellboy72@gmail.com:Collins1997']
 
-    let b = ['chris.g.counts@gmail.com:Monica55', 'coigmaria@gmail.com:medic1na', 'chanoalbo10@gmail.com:catalina13', 'fabio.fernandezv@gmail.com:slpmex26', 'julien.serrano77@gmail.com:maison324', 'andyziv17@gmail.com:walter16', 'paarthdave1@gmail.com:zxcvbnm231', 'jaimefernandezgomez8@gmail.com:montenegro0', 'moenia420@gmail.com:lerma1976', 'matias.torocabrera19@gmail.com:matias.1995', 'andersond@gmail.com:unit0174', 'alessandrofiore20973511@gmail.com:sucazzi97', 'eduardo.espinoza16@gmail.com:thelalox1992', 'emilia.jalaja@gmail.com:gryffindor16', 'griduda@gmail.com:q1w2e3r4', 'theharoontv@gmail.com:google91', 'pezzottaandrea8@gmail.com:andrea123', 'emilioparedez@gmail.com:emilio4864', 'raghav288@gmail.com:jyothi288', 'joaofcsouza@gmail.com:laralaf21', 'briandomi89@gmail.com:lunita89', 'tommyjurgensen@gmail.com:davidvilla7', 'sebastianmartinmenendez@gmail.com:bautista2008', 'ibrainm@gmail.com:id21507', 'ivandelahozkipke@gmail.com:kaki1100', 'caio.quinilato@gmail.com:elfos123', 
-'naderfuad7@gmail.com:nn123456', 'qumberali1@gmail.com:moneyrocks1', 'nassemom@gmail.com:omom7070', 'pelael87@gmail.com:nare2015', 'matyy102@gmail.com:indiana102', 'gabriel.jacy@gmail.com:gabriel26554368', 'alejandromztjr@gmail.com:chivas123', 'giovanniromeo251@gmail.com:giovivale99', 'burkiemartin29@gmail.com:warrior36', 'mcaronti@gmail.com:napoleon10', 'aayushirgamji@gmail.com:Aayushi99', 'colinbradley96@gmail.com:numbers1', 'jasigala13@gmail.com:131351Ja', 'baxterbarni@gmail.com:Sulim1967', 'cleberlm@gmail.com:zeber1681']
+    let b = ['boyceh2@gmail.com:harrison21','harrisonhawe@outlook.com:Freddie11','nighthawk3032@gmail.com:Captain3032','ultimaxsuper@gmail.com:49sucker0224','adrianriverapineiro@gmail.com:Riverplate1','thiago1231984@gmail.com:thiago980','ethanhinojosa17@gmail.com:Eh08112001','albin.a00@hotmail.com:q1w2e3r4t5y6','mertali_20_15@hotmail.com:images123','kyrias7@hotmail.com:lebron7','kalous1@live.com:Bearcats1','jaseadams34@gmail.com:robert456','mattathias99@gmail.com:Carmello1','razzberryjam02@gmail.com:StevieG08','yo_mo_vi@hotmail.com:tiobueno1','robertcalderon53@aol.com:Northside53','robmplugge@hotmail.com:Blastech11','jsarroswilling@yahoo.com:Pokemon11','hbuchanan1304@gmail.com:Hayden1!','wulfblaze@gmail.com:mike5967','victorluizcosta@hotmail.com:Seedao91','Bbegey92@gmail.com:Jericho7','ravage649@gmail.com:BeastWars649','dennis.lukowski@googlemail.com:hur3nsohn','klsy_queen@yahoo.com:witcher22','dubc21489@gmail.com:Dubc21489','josemarco.diva@gmail.com:03201985Nonoy','sao.kazuto4@gmail.com:Lemons12','cggnmike@gmail.com:ilove123','mafimaamaloa11@gmail.com:Saucey_19','damian.mena36@yahoo.com:minecraft123','jakubstolowski@gmail.com:dupablada123','ilovetotrees@gmail.com:yoshi456','sheridan.ridsdale@gmail.com:party123','leoverlord@gmail.com:power001','didou.dadi10@gmail.com:124578369a','afk.05@hotmail.com:umut2005','russellxdesu@gmail.com:coolkid420','bbox2018@gmail.com:Brayden5','chjepson@gmail.com:douglas005','luisrodriguez2001@icloud.com:Luis2001','tmcscotthamer@gmail.com:scotty22','ebaypash@gmail.com:2x4b523p','joshua.belyo@hotmail.com:F50adidas','danieltsliu@gmail.com:c0mputer.','jsklar6@gmail.com:aa1122aa']
     
     let c = ['kellyoklein@hotmail.com:baskets1 | Subscription: Premium | Recurring date: | Status:Premium for Family',
 'lucasrs90@hotmail.com:08021990 | Subscription: Premium | Recurring date: | Status:Premium for Family',
@@ -461,7 +459,7 @@ function clusive(user, time) {
       if (msg.startsWith("+stock")) {
         embed = new discord.RichEmbed ()
         .setAuthor("Accounts That Are In Stock")
-        .setDescription("__**Fortnite**__: Will Be Restocking Soon \n __**Spotify**__: 400")
+        .setDescription("__**Fortnite**__: 450 \n __**Spotify**__: 350 \n __**Origin**__: Not Restocked Yet \n __**Uplay**__: Not Restocked Yet")
         .setFooter("We Will Be Adding Accounts Everyday!")
         .setColor("#FF00FF")
         message.channel.send(embed);
@@ -554,7 +552,7 @@ function clusive(user, time) {
         if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || coolguy.has(message.author)) return
-            mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 34)])
+            mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 28)])
             embed = new discord.RichEmbed ()
             .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
@@ -565,7 +563,7 @@ function clusive(user, time) {
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldowns.has(message.author)) return
-                mention.send('**Your Premuim Fortnite Account Is: **' + b[Math.floor(Math.random() * 40)])
+                mention.send('**Your Premuim Fortnite Account Is: **' + b[Math.floor(Math.random() * 47)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
