@@ -642,9 +642,9 @@ function clusive(user, time) {
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldowns.has(message.author)) return
-                mention.send('**Your Premuim Fortnite Account Is: **' + b[Math.floor(Math.random() * 50)])
+                mention.send('**Your Premium Fortnite Account Is: **' + b[Math.floor(Math.random() * 50)])
                 embed = new discord.RichEmbed ()
-                    .setDescription ("I Have Successfully Sent You The Premuim Fortnite Account ! Please Check Your DMs:thumbup:")
+                    .setDescription ("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
                     message.channel.send(embed);
               cooldown(message.author, 180);
@@ -664,9 +664,9 @@ function clusive(user, time) {
                 if (message.content.startsWith ("+pgen spotify") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldude.has(message.author)) return
-                mention.send('**Your Premuim Spotify Account Is: **' + d[Math.floor(Math.random() * 200)])
+                mention.send('**Your Premium Spotify Account Is: **' + d[Math.floor(Math.random() * 200)])
                 embed = new discord.RichEmbed ()
-                    .setDescription ("I Have Successfully Sent You The Premuim Spotify Account ! Please Check Your DMs:thumbup:")
+                    .setDescription ("I Have Successfully Sent You The Premium Spotify Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
                     message.channel.send(embed);
               clusives(message.author, 180);
