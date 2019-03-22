@@ -177,7 +177,7 @@ client.on('guildMemberRemove' , member => {
 'mario0oma_99@hotmail.com:Myungsoo123',
 'ys3-@hotmail.com:Dsds3765',
 'xavier.viera2@gmail.com:William1',
-'johnlemuelvalera@gmail.com:Paradise5v
+'johnlemuelvalera@gmail.com:Paradise5',
 'ericanyanwu7@yahoo.com:Tekkenn011',
 'jedijoelgoodnow@gmail.com:Spooky0520',
 'mattyaneo@gmail.com:3.14Geck0s',
