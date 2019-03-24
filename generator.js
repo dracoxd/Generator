@@ -700,7 +700,7 @@ function clusive(user, time) {
         if (message.content.startsWith ("+gen fortnite") && message.member.hasPermission ("VIEW_AUDIT_LOG")) {
             if (message.channel.id !== '551484524941410334') return
             if (message.author.bot || coolguy.has(message.author)) return
-            mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 30)])
+            mention.send('**Your Fortnite Account Is: **' + a[Math.floor(Math.random() * 50)])
             embed = new discord.RichEmbed ()
             .setDescription ("I Have Successfully Sent You The Fortnite Account ! Please Check Your DMs:thumbup:")
             .setColor ("#FF00FF")
@@ -711,7 +711,7 @@ function clusive(user, time) {
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldowns.has(message.author)) return
-                mention.send('**Your Premium Fortnite Account Is: **' + b[Math.floor(Math.random() * 50)])
+                mention.send('**Your Premium Fortnite Account Is: **' + b[Math.floor(Math.random() * 100)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
