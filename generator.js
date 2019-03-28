@@ -600,7 +600,7 @@ function clusive(user, time) {
       if (msg.startsWith("+stock")) {
         embed = new discord.RichEmbed ()
         .setAuthor("Accounts That Are In Stock")
-        .setDescription("__**Fortnite**__: 500 \n __**Spotify**__: 850 \n __**Origin**__: Not Restocked Yet \n __**Uplay**__: Not Restocked Yet")
+        .setDescription("__**Fortnite**__: 400 \n __**Spotify**__: 600 \n __**Origin**__: Not Restocked Yet \n __**Uplay**__: Not Restocked Yet")
         .setFooter("We Will Be Adding Accounts Everyday!")
         .setColor("#FF00FF")
         message.channel.send(embed);
@@ -704,7 +704,7 @@ function clusive(user, time) {
               if (message.content.startsWith ("+pgen fortnite") && message.member.hasPermission ("USE_EXTERNAL_EMOJIS")) {
                 if (message.channel.id !== '551484526262747144') return
                 if (message.author.bot || cooldowns.has(message.author)) return
-                mention.send('**Your Premium Fortnite Account Is: **' + b[Math.floor(Math.random() * 100)])
+                mention.send('**Your Premium Fortnite Account Is: **' + b[Math.floor(Math.random() * 93)])
                 embed = new discord.RichEmbed ()
                     .setDescription ("I Have Successfully Sent You The Premium Fortnite Account ! Please Check Your DMs:thumbup:")
                     .setColor ("#FF00FF")
